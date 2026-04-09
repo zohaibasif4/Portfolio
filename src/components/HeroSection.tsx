@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Download, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { ThreeScene } from './ThreeScene';
 export function HeroSection() {
   const containerVariants = {
@@ -45,7 +45,7 @@ export function HeroSection() {
           animate="visible"
           className="flex flex-col items-start">
           
-          <motion.div
+          {/* <motion.div
             variants={itemVariants}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border-electric/30 mb-6">
             
@@ -53,7 +53,7 @@ export function HeroSection() {
             <span className="text-xs font-medium text-electric uppercase tracking-wider">
               Available for work
             </span>
-          </motion.div>
+          </motion.div> */}
 
           <motion.h1
             variants={itemVariants}
@@ -87,13 +87,6 @@ export function HeroSection() {
               
               View Projects
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href="#"
-              className="px-8 py-4 rounded-full glass-panel hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
-              
-              <Download className="w-4 h-4" />
-              Download CV
             </a>
           </motion.div>
         </motion.div>
