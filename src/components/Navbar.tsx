@@ -91,7 +91,9 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:zohaibasif.zohaib@gmail.com"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdmTXkwPWhZJPrZCXlhnXKvwHjmhXkccPHlmJBLPChksbCCQQvlkcQTfMQdHgPnbgkzHjBmSWkqVWsCwMvkZHpvCbWKBbFPXvhWsPdBvXMqLfMqV"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-electric/50 transition-all duration-300 text-sm font-medium flex items-center gap-2"
           >
             Contact Me
@@ -144,7 +146,9 @@ export function Navbar() {
                 </a>
               ))}
               <a
-                href="mailto:zohaibasif.zohaib@gmail.com"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdmTXkwPWhZJPrZCXlhnXKvwHjmhXkccPHlmJBLPChksbCCQQvlkcQTfMQdHgPnbgkzHjBmSWkqVWsCwMvkZHpvCbWKBbFPXvhWsPdBvXMqLfMqV"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 text-center px-5 py-3 rounded-lg bg-gradient-to-r from-electric to-purple text-white font-medium"
               >
                 Contact Me
