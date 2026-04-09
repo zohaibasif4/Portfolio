@@ -86,7 +86,7 @@ export function Footer() {
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-magenta/20 group-hover:text-magenta transition-colors">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  Ali Park, Cantt, Lahore
+                  Ali Park, Lahore , Cantt
                 </a>
               </li>
             </ul>
