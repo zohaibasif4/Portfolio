@@ -1,11 +1,5 @@
-import { Mail, Phone, MapPin, Code2, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, Code2 } from 'lucide-react';
 export function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
   return (
     <footer className="relative z-10 mt-20 border-t border-white/10 glass-panel bg-space-900/80">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -14,7 +8,7 @@ export function Footer() {
           <div className="space-y-4">
             <div
               className="flex items-center gap-2 group cursor-pointer"
-              onClick={scrollToTop}>
+              >
               
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-electric via-purple to-magenta p-[1px]">
                 <div className="w-full h-full bg-space-900 rounded-lg flex items-center justify-center group-hover:bg-transparent transition-colors duration-300">
@@ -59,7 +53,9 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:zohaibasif.zohaib@gmail.com"
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=SxfkdmTXkwPWhZJPrZCXlhnXKvwHjmhXkccPHlmJBLPChksbCCQQvlkcQTfMQdHgPnbgkzHjBmSWkqVWsCwMvkZHpvCbWKBbFPXvhWsPdBvXMqLfMqV"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm group">
                   
                   <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-electric/20 group-hover:text-electric transition-colors">
@@ -79,11 +75,19 @@ export function Footer() {
                   +92 321-9686501
                 </a>
               </li>
-              <li className="flex items-center gap-3 text-gray-400 text-sm group">
-                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-magenta/20 group-hover:text-magenta transition-colors">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                Ali Park, Cantt, Lahore
+              <li>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                    'Ali Park, Lahore, Cantt'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors text-sm group">
+                  <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-magenta/20 group-hover:text-magenta transition-colors">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  Ali Park, Cantt, Lahore
+                </a>
               </li>
             </ul>
           </div>
@@ -95,12 +99,6 @@ export function Footer() {
             reserved.
           </p>
 
-          <button
-            onClick={scrollToTop}
-            className="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-white/10 hover:text-electric transition-all duration-300 group">
-            
-            <ArrowUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-          </button>
         </div>
       </div>
     </footer>);
